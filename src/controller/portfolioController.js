@@ -1,6 +1,6 @@
 const { Resend } = require("resend");
 
-const resend = new Resend("rnd_pdOgTpb6CiIz9vpbZ97eNbG7ZC9U");
+const resend = new Resend("re_PGjHc8pz_DDLKT6bVMhDin5Cc3vYV4J9y");
 
 const addvisitor = async (req, res) => {
   try {
