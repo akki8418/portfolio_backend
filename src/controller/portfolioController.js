@@ -6,13 +6,14 @@ const addvisitor = async (req, res) => {
 
     // 1. Nodemailer Transporter Setup
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
         user: "rd0930752@gmail.com", // Apni Gmail ID dalein
         pass: "cztt qefa vwrz acip", // Google App Password (16 digit)
       },
     });
-
     // 2. Email Content
     const mailOptions = {
       from: `"${name}" <${email}>`,
